@@ -53,7 +53,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 fixLinks(infoContainer);
             });
     }
-
+// Cargar Mision Vision
+    const misionVisionContainer = document.getElementById("mision-vision");
+    if (misionVisionContainer) {
+        fetch(basePath + "components/mision-vision.html")
+            .then(res => res.text())
+            .then(data => {
+                misionVisionContainer.innerHTML = data;
+                fixLinks(misionVisionContainer);
+            });
+    }
 
 
     // Cargar Footer
