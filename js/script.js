@@ -43,6 +43,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 fixLinks(navbarContainer);
             });
     }
+// Cargar Info history `component
+    const infoContainer = document.getElementById("info");
+    if (infoContainer) {
+        fetch(basePath + "components/info-history.html")
+            .then(res => res.text())
+            .then(data => {
+                infoContainer.innerHTML = data;
+                fixLinks(infoContainer);
+            });
+    }
+
+
 
     // Cargar Footer
     const footerContainer = document.getElementById("footer");
