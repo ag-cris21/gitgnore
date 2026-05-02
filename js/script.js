@@ -64,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     }
 
-
     // Cargar Footer
     const footerContainer = document.getElementById("footer");
     if (footerContainer) {
