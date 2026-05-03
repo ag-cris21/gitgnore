@@ -19,6 +19,21 @@
 
 Toda la documentación detallada del proyecto (arquitectura, CI, flujo de ramas, estándares de código, etc.) se encuentra disponible en la **[WIKI del proyecto](../../wiki)**.
 
+---
+---
+## 🌐 Sitio Web del Proyecto
+
+Toda la documentación detallada del proyecto (arquitectura, CI, flujo de ramas, templates, DoD/DoR, etc.)<br>
+Estado actual del proyecto
+Arquitectura diseñada y documentada
+CI implementado y funcional
+Plantilla de Pull Request activa
+Reglas de protección en ramas activas
+User Stories definidas y organizadas
+Código base creado con enfoque modular y escalable
+Puedes visualizar el resultado final y explorar nuestro proyecto desplegado a través de GitHub Pages en el siguiente enlace:
+
+> [!TIP]
 🚀 **[Visitar la Web del Proyecto Gitignore](https://ag-cris21.github.io/gitgnore/)**
 
 ---
@@ -45,16 +60,6 @@ Este proyecto fue desarrollado aplicando buenas prácticas de desarrollo web, mo
 - **Arquitectura Web:** Modularización de componentes mediante la inyección de partes estáticas (Navbar, Footer, Info UMSS) utilizando JavaScript, manteniendo el código HTML limpio y escalable.
 
 ---
-## 🌐 Sitio Web del Proyecto
-
-Estado actual del proyecto
-Arquitectura diseñada y documentada
-CI implementado y funcional
-Plantilla de Pull Request activa
-Reglas de protección en ramas activas
-User Stories definidas y organizadas
-Código base creado con enfoque modular y escalable
-Puedes visualizar el resultado final y explorar nuestro proyecto desplegado a través de GitHub Pages en el siguiente enlace:
 
 
 ## ⚙️ Cómo Ejecutar en Local (Guía para el Auxiliar)
@@ -92,7 +97,7 @@ npx live-server
 
 ## 📋 Resumen del Proyecto
 
-Este proyecto consiste en un **sitio web informativo** sobre la institución educativa, implementado con **HTML, CSS y JavaScript vanilla**, bajo un enfoque profesional que incluye:
+Este proyecto consiste en un **sitio web informativo** sobre la institución educativa, implementado con **HTML, CSS y JavaScript vanilla**, bajo un  un enfoque profesional, utilizando principios SOLID, Gitflow, CI/CD con GitHub Actions, y una arquitectura extensible.
 
 - ✅ Validación de código con linters (HTML, CSS, JavaScript)
 - ✅ Integración Continua (CI) con GitHub Actions
@@ -156,3 +161,23 @@ npm run lint:css    # Solo CSS
 - ✅ Documentación de estándares de código
 
 ---
+## Flujo de trabajo
+
+Se sigue un flujo **Gitflow profesional**:
+
+- Ramas: `main`, `develop`, `feature/desc`, `bugfix/desc`, `hotfix/desc`
+- Validaciones automáticas mediante CI
+- Pull Requests con template obligatorio
+- Uso del tablero Trello para visualizar el ciclo de vida de cada historia (ver Wiki)
+
+Template de Pull Request: 
+**[template PR](/.github/workflows/PULL_REQUEST_TEMPLATE.md)**
+-- -
+
+### Gestion de software
+El grupo tiene conocimientos no solo de desarrollo, tambien estamos concientes de que la gestion del flujo de desarrollo de software tiene un gran peso para dar un resultado optimo.
+Por dicho motivo hemos decidido implementar una metodologia de desarrollo agile basada en **KANBAN**, donde definimos las tareas a realizar, el tiempo para realizarlas y una correcta division de tareas. De esta forma garantizamos que cada integrante trabaje en su feature sin chocar con los otros integrantes.
+El trablero que se uso es el sgte: 
+```
+https://trello.com/invite/b/69f430246c09592826ebf16b/ATTI857ab0531c1fbcecb517024d6908bd0cDE329A45/team-gitignore
+```
