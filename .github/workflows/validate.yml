@@ -1,0 +1,43 @@
+name: Validación de Código
+
+on:
+  push:
+    branches: [main, master, develop]
+  pull_request:
+    branches: [main, master, develop]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v3
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Validar HTML
+        run: npm run lint:html
+        continue-on-error: true
+
+      - name: Validar JavaScript
+        run: npm run lint:js
+        continue-on-error: true
+
+      - name: Validar CSS
+        run: npm run lint:css
+        continue-on-error: true
+
+      - name: Validar que no haya archivos no permitidos
+        run: |
+          if find . -name "*.log" -o -name ".DS_Store" | grep -q .; then
+            echo "❌ Encontrados archivos no permitidos"
+            exit 1
+          fi
+          echo "✅ Validación completada"

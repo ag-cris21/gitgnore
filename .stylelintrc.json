@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "indentation": 2,
+    "string-quotes": "single",
+    "no-descending-specificity": null,
+    "selector-list-comma-newline-after": "always"
+  }
+}
