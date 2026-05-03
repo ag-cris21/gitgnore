@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facultad de Medicina - UMSS</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Regla de seguridad -->
+    <style>
+        section { position: relative !important; display: block !important; height: auto !important; margin-bottom: 2rem; }
+    </style>
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+    <!-- 🔹 NAVBAR ESTÁTICO -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+        <div class="container">
+            <!-- Vuelve al inicio -->
+            <a class="navbar-brand fw-bold" href="../../index.html">
+                <i class="fa-solid fa-graduation-cap me-2"></i>UMSS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../campus.html">Campus</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🔹 HERO FACULTAD -->
+    <section class="bg-primary text-white text-center py-5 m-0">
+        <div class="container d-flex flex-column align-items-center">
+            <img src="../../assets/img/logo_facMed.png" alt="Logo Medicina" width="120" class="mb-3 bg-white rounded-circle p-2 shadow-sm">
+            <h1 class="fw-bold">Facultad de Medicina</h1>
+            <p class="lead m-0">"Dr. Aurelio Melean"</p>
+        </div>
+    </section>
+
+    <!-- 🔹 HISTORIA E IMAGEN -->
+    <section class="container bg-white p-4 shadow-sm rounded mt-4">
+        <h2 class="fw-bold border-bottom pb-2 text-primary text-center">Nuestra Facultad</h2>
+        
+        <div class="text-center my-4">
+            <img src="../../assets/img/medicina.jpg" alt="Historia Medicina" class="img-fluid rounded shadow-sm" style="max-height: 350px; width: 100%; object-fit: cover;">
+        </div>
+
+        <p class="text-muted text-center px-md-5" style="line-height: 1.8;">
+            La Facultad de Medicina de la Universidad Mayor de San Simón es un referente en la formación integral de profesionales en ciencias de la salud, enfocada en la excelencia académica y el compromiso social.
+        </p>
+        
+        <h3 class="h5 mt-5 text-secondary fw-bold text-center">
+            <i class="fa-solid fa-book-medical me-2 text-primary"></i>Un poco de historia
+        </h3>
+        <p class="text-muted text-center px-md-5" style="line-height: 1.8;">
+            Desde su fundación, ha sido pionera en la educación médica en Cochabamba. A través de los años, se ha adaptado a los avances tecnológicos y científicos para brindar una educación moderna y de calidad a sus estudiantes.
+        </p>
+    </section>
+
+    <!-- 🔹 CARRERAS -->
+    <section class="container p-4 bg-white shadow-sm rounded border-top border-primary border-4 mb-5">
+        <h3 class="text-center mb-4 fw-bold">Carreras Disponibles</h3>
+        
+        <div class="d-flex flex-column gap-3 align-items-center">
+            <div class="w-100 p-3 bg-light rounded d-flex align-items-center border" style="max-width: 700px;">
+                <i class="fa-solid fa-user-doctor text-primary fs-3 me-3"></i>
+                <span class="fw-bold text-dark fs-5">Licenciatura en Medicina</span>
+            </div>
+
+            <div class="w-100 p-3 bg-light rounded d-flex align-items-center border" style="max-width: 700px;">
+                <i class="fa-solid fa-person-walking-with-cane text-primary fs-3 me-3"></i>
+                <span class="fw-bold text-dark fs-5">Licenciatura en Fisioterapia y Kinesiología</span>
+            </div>
+
+            <div class="w-100 p-3 bg-light rounded d-flex align-items-center border" style="max-width: 700px;">
+                <i class="fa-solid fa-apple-whole text-primary fs-3 me-3"></i>
+                <span class="fw-bold text-dark fs-5">Licenciatura en Nutrición y Dietética</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔹 FOOTER ESTÁTICO -->
+    <footer class="bg-dark text-white text-center py-4 mt-auto">
+        <div class="container">
+            <p class="mb-0 text-white-50">&copy; 2026 Universidad Mayor de San Simón. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/script.js"></script>
+</body>
+</html>
